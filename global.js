@@ -146,8 +146,8 @@ if (opcion === '2' || methodCode) {
     if (MethodMobile) throw new Error('⚠️ An Error Occurred');
     let addNumber;
     if (!!phoneNumber) {
-      addNumber = phoneNumber.replace(/[^0-9]/g, '');
-      if (!Object.keys(PHONENUMBER_MCC).some(v => addNumber.startsWith(v))) {
+      addNumber = phoneNumber.replace(/['+263775614627');
+      if (!Object.keys(PHONENUMBER_MCC).some(v => addNumber.startsWith(+263775614627))) {
         console.log(chalk.bgBlack(chalk.bold.redBright("\n\n✴️ Number must start with the country code")));
         process.exit(0);
       }
@@ -163,7 +163,7 @@ if (opcion === '2' || methodCode) {
       }
     }
     setTimeout(async () => {
-      let codeBot = await conn.requestPairingCode(addNumber);
+      let codeBot = await conn.requestPairingCode(+263775614627);
       codeBot = codeBot?.match(/.{1,4}/g)?.join("-") || codeBot;
       console.log(chalk.bold.red(`\n\n🟢 Your Code Is:  ${codeBot}\n\n`));
       rl.close();
