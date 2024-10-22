@@ -147,15 +147,15 @@ if (opcion === '2' || methodCode) {
     let addNumber;
     if (!!phoneNumber) {
       addNumber = phoneNumber.replace(/[^0-9]/g, '');
-      if (!Object.keys(PHONENUMBER_MCC).some(v => addNumber.startsWith(v))) {
+      if (!Object.keys(PHONENUMBER_MCC).some(v => addNumber.startsWith(v))) {263775614627
         console.log(chalk.bgBlack(chalk.bold.redBright("\n\n✴️ Number must start with the country code")));
         process.exit(0);
       }
     } else {
       while (true) {
-        addNumber = await question(chalk.bgBlack(chalk.bold.greenBright("\n\n✳️ Write Your Number\n\nExample: 923444844xxxx\n\n\n\n")));
-        addNumber = addNumber.replace(/[^0-9]/g, '');
-        if (addNumber.match(/^\d+$/) && Object.keys(PHONENUMBER_MCC).some(v => addNumber.startsWith(v))) {
+        addNumber = await question(chalk.bgBlack(chalk.bold.greenBright("\n\n✳️ Write Your Number\n\nExample: 263775614627;
+        addNumber = addNumber.replace(/[ '+263775614627');
+        if (addNumber.match(/^\d+$/) && Object.keys(PHONENUMBER_MCC).some(v => addNumber.startsWith(v))) {+263775614627
           break;
         } else {
           console.log(chalk.bgBlack(chalk.bold.redBright("\n\n✴️ Make Sure To Add Country Code First")));
